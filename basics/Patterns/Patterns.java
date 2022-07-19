@@ -1,57 +1,68 @@
-import java.util.Scanner ;
-public class Patterns{
-    public static void main(String[] Args){
-        Scanner sc =new Scanner (System.in);
-        System.out.println("ENter the value of n ");
-        int n=sc.nextInt();
-        int i=1;
-        int k=(n/2)+1;
-        int j =1;
-        while(i<=k){
-            j =1;
-            while (j<(k-i+1)){
-                System.out.print(" ");
-                j++;
-            }
-            j=1;
-            while(j<=i){
-                System.out.print("*");
-                j++;
-            }
-            j=1;
-            while(j<i){
-                System.out.print("*");
-                j++;
-            }
-            i++;
-            System.out.println();
-        }
-        i=1;
-        k=(n/2);
-        while (i<=n)
-        {   j=1;
-            while (j<=i){
-                System.out.print(" ");
-                j++;
-            }
-            j=1;
-            while(j<=(k-i+1)){
-                System.out.print("*");
-                j++;
-            }
-            j=1;
-            while (j<k-i+1){
-                System.out.print("*");
-                j++;
-            }
-            i++;
-            System.out.println();
 
-        }
-        sc.close();
 
-    }
-}
+
+// ENter the value of n 
+// 5
+//   *
+//  ***
+// *****
+//  ***
+//   *
+
+// import java.util.Scanner ;
+// public class Patterns{
+//     public static void main(String[] Args){
+//         Scanner sc =new Scanner (System.in);
+//         System.out.println("ENter the value of n ");
+//         int n=sc.nextInt();
+//         int i=1;
+//         int k=(n/2)+1;
+//         int j =1;
+//         while(i<=k){
+//             j =1;
+//             while (j<(k-i+1)){
+//                 System.out.print(" ");
+//                 j++;
+//             }
+//             j=1;
+//             while(j<=i){
+//                 System.out.print("*");
+//                 j++;
+//             }
+//             j=1;
+//             while(j<i){
+//                 System.out.print("*");
+//                 j++;
+//             }
+//             i++;
+//             System.out.println();
+//         }
+//         i=1;
+//         k=(n/2);
+//         while (i<=n)
+//         {   j=1;
+//             while (j<=i){
+//                 System.out.print(" ");
+//                 j++;
+//             }
+//             j=1;
+//             while(j<=(k-i+1)){
+//                 System.out.print("*");
+//                 j++;
+//             }
+//             j=1;
+//             while (j<k-i+1){
+//                 System.out.print("*");
+//                 j++;
+//             }
+//             i++;
+//             System.out.println();
+
+//         }
+//         sc.close();
+
+//     }
+// }
 
 
 // Enter the value of n 
