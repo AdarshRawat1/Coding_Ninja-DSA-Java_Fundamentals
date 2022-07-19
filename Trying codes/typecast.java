@@ -3,7 +3,9 @@ public class typecast
 
     public static void main(String[] args) 
     {
-        System.out.println('a'+1);
+        int i='c';
+
+        System.out.println(i);
        /** 
         char ch = 'a';
         int ch2 = 'a' + 3;
