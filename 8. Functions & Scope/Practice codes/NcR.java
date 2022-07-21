@@ -18,5 +18,6 @@ public class NcR{
     int factNR=fact(n-r);
     int NcR= factN /(factR*factNR);
     System.out.println("The NcR will be"+NcR);
+    sc.close();
 }
 }
