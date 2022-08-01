@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class SelectionSort {
+    // function for Array input
     static int[] inputArray(){
         Scanner sc=new Scanner(System.in);
         System.out.println( "Enter the lenght of array");
@@ -12,24 +13,23 @@ public class SelectionSort {
         sc.close();
         return arr;
     }
+    //Function for Selection Sort
     static void sSort(int arr[]){
-        int pos = 0;
-        int minPos;
-        while (pos <arr.length){
-            int min = arr[pos];
-            int Epos = arr[pos];
-            minPos=pos;
-            for ( int i=pos+1;i<arr.length;i++){
-                if (arr[i]<min){
-                    minPos=i;
-                    min=arr[i];
+        for ( int pos = 0 ; pos < arr.length ; pos ++){
+            int minPos =pos;
+            for ( int j = pos + 1; j <arr.length ; j++){
+                if (arr[j]<arr[minPos]){
+                    minPos = j;   
                 }
+            }
+            if (minPos != pos){
+                int temp = arr [pos];
+                arr[pos]= arr [minPos];
+                arr [minPos]= temp;
             } 
-            arr[pos]=arr[minPos];
-            arr[minPos]= Epos;
-            pos++;
         }
     }
+    //main function 
     public static void main ( String [] args){
         int arr[]= inputArray();
         sSort(arr);
